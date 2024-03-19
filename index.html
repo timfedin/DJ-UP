@@ -12,17 +12,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    
     <title>DJ, UP! - Сервис диджеев для заказа треков</title>
 </head>
 <body>
     <section class="main">
-        <header><a href="sign.html"><img src="img/user.svg" alt=""></a></header>
+        <header><a href="#" class="sign"><img src="img/user.svg" alt=""></a></header>
         <div class="dj"><h1>D<span>J<span class="comma">,</span></span> U<span>P!</span></h1></div>
         <div class="desc"><p>средство диджеев<br>для удобных<br>заказов трека</p></div>
     </section>
     <section class="content">
         <p class="text">Мы создали инновационный сервис, который позволяет гостям заказывать музыку прямо из своего мобильного устройства за фиксированную цену</p>
-        <a href="sign.html"><div class="try"><p>попробовать</p></div></a>
+        <a href="#" class="signo"><div class="try"><p>попробовать</p></div></a>
     </section>
+
+    <!-- Модальное окно -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <h1>Вхо<span>д</span></h1>
+            <div class="form">
+                <form action="#">
+                    <input type="tel" name="tel" id="numbersig" placeholder="Ваш телефон">
+                    <input type="password" name="password" id="passsig" placeholder="Ваш пароль">
+                    <button type="button" class="btn">Войти</button>
+                </form>
+            </div>
+            <a href="#" class="reg"><p>регистрация</p></a>
+        </div>
+    </div>
+    <script src="script/modalsign.js"></script>
+
+    <div id="myModaltwo" class="modaltwo">
+        <div class="modal-content">
+            <a class="closetwo">&times;</a>
+            <h1>Регистраци<span>я</span></h1>
+            <div class="form">
+                <form action="#">
+                    <input type="tel" name="tel" id="numberreg" placeholder="Ваш телефон">
+                    <input type="password" name="password" id="passreg" placeholder="Ваш пароль">
+                    <button type="button" class="btn">Войти</button>
+                </form>
+            </div>
+            <a href="#" class="sig"><p>вход</p></a>
+        </div>
+    </div>
+    <script src="script/modalreg.js"></script>
 </body>
 </html>

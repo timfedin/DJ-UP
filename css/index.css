@@ -11,13 +11,24 @@
     font-display: swap;
 }
 
-
 /* -------------------------------- */
 
 body {
     font-size: 16px;
     margin: 0;
-    height: 200vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Floripa, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5em;
+}
+
+p {
+    font-family: "Prosto One";
 }
 
 /* первый блок */
@@ -44,9 +55,7 @@ body {
 }
 
 .dj h1 {
-    font-family: Floripa, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 5vw;
-    letter-spacing: 0.5em;
     color: #111111;
 }
 
@@ -55,7 +64,6 @@ body {
 }
 
 .desc p {
-    font-family: "Prosto One";
     font-size: 2vh;
     margin: 0;
     letter-spacing: 0.5em;
@@ -77,7 +85,6 @@ body {
 .text {
     color: white;
     width: 72.36vw;
-    font-family: "Prosto One";
     font-size: 2vh;
     margin: 0;
     letter-spacing: 0.2em;
@@ -102,7 +109,6 @@ body {
 }
 
 .try p {
-    font-family: "Prosto One";
     font-size: 2vh;
     color: black;
 }
@@ -111,12 +117,130 @@ body {
     background-color: #bebebe;
 }
 
+
+/* Модальное окно */
+
+
+.modal, .modaltwo {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20vh auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111111;
+}
+
+.close, .closetwo {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 1%;
+    top: 0%;
+}
+
+a:hover,
+a:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content p {
+    display: inline;
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+    color: #aaa;
+}
+
+.modal-content h1 {
+    display: inline;
+    color: #f4f4f4;
+    font-size: 1.5em;
+}
+
+.modal-content span {
+    letter-spacing: 0;
+}
+
+.form {
+    width: 100%;
+}
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    width: 17em;
+    border: none;
+    outline: none;
+    border-radius: 1em;
+    font-family: "Prosto One";
+    background-color: #f4f4f4;
+    padding: 2% 5%;
+}
+
+.modal-content button {
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-bottom: 3vh;
+}
+
+
+.modal-content button:active {
+    background-color: #bebebe;
+}
+
+
+
+
+
+
+
 /* media */
+
 
 @media(hover: hover) and (pointer: fine) {
     .try:hover {
         background: #bebebe;
         transition: background 0.2s linear;
+    }
+    .modal-content button:hover {
+        background-color: #bebebe;
+        cursor: pointer;
     }
 }
 
