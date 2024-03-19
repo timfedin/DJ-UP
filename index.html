@@ -9,15 +9,13 @@
     <meta name="revisit-after" content="7 days"> 
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+
     
     <title>DJ, UP! - Сервис диджеев для заказа треков</title>
 </head>
 <body>
     <section class="main">
-        <header><a href="#" class="sign"><img src="img/user.svg" alt=""></a></header>
+        <header><a href="#" class="sign" aria-label="user"><img src="img/user.svg" alt=""></a></header>
         <div class="dj"><h1>D<span>J<span class="comma">,</span></span> U<span>P!</span></h1></div>
         <div class="desc"><p>средство диджеев<br>для удобных<br>заказов трека</p></div>
     </section>
@@ -30,12 +28,12 @@
 
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <a class="close">&times;</a>
+            <a class="close"  href="#">&times;</a>
             <h1>Вхо<span>д</span></h1>
             <div class="form">
                 <form action="#">
-                    <input type="tel" name="tel" id="numbersig" placeholder="Ваш телефон">
-                    <input type="password" name="password" id="passsig" placeholder="Ваш пароль">
+                    <input type="tel" name="tel" id="numbersig" placeholder="Введите телефон">
+                    <input type="password" name="password" id="passsig" placeholder="Введите пароль">
                     <button type="button" class="btn">Войти</button>
                 </form>
             </div>
@@ -46,13 +44,13 @@
 
     <div id="myModaltwo" class="modaltwo">
         <div class="modal-content">
-            <a class="closetwo">&times;</a>
+            <a class="closetwo" href="#">&times;</a>
             <h1>Регистраци<span>я</span></h1>
             <div class="form">
                 <form action="#">
-                    <input type="tel" name="tel" id="numberreg" placeholder="Ваш телефон">
-                    <input type="password" name="password" id="passreg" placeholder="Ваш пароль">
-                    <button type="button" class="btn">Войти</button>
+                    <input type="tel" name="tel" id="numberreg" placeholder="Введите телефон">
+                    <input type="password" name="password" id="passreg" placeholder="Придумайте пароль">
+                    <button type="button" class="btn">Зарегистрироваться</button>
                 </form>
             </div>
             <a href="#" class="sig"><p>вход</p></a>

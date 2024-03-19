@@ -11,6 +11,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Prosto One';
+    src: local('Prosto One'),
+        url('../fonts/ProstoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* -------------------------------- */
 
 body {
@@ -23,7 +32,7 @@ a {
 }
 
 h1 {
-    font-family: Floripa, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Floripa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.5em;
 }
 
@@ -136,7 +145,7 @@ p {
 .modal-content {
     background-color: #fefefe;
     margin: 20vh auto;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     width: 80%;
     max-width: 600px;
     border-radius: 15px;
@@ -169,7 +178,7 @@ a:focus {
     display: inline;
     position: absolute;
     right: 2%;
-    bottom: 0;
+    bottom: -4%;
     color: #aaa;
 }
 
@@ -177,6 +186,7 @@ a:focus {
     display: inline;
     color: #f4f4f4;
     font-size: 1.5em;
+    
 }
 
 .modal-content span {
@@ -197,7 +207,8 @@ form {
 .modal-content input {
     display: block;
     margin: 0 auto;
-    margin-bottom: 3%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     width: 17em;
     border: none;
     outline: none;
@@ -207,22 +218,51 @@ form {
     padding: 2% 5%;
 }
 
-.modal-content button {
-    background-color: #f4f4f4;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    margin-bottom: 3vh;
+/* CSS */
+.modal-content button{
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 2%;
+  outline: none;
+  padding: 8px 18px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
 }
 
+.modal-content button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
 
 .modal-content button:active {
-    background-color: #bebebe;
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
 }
+
+.modal-content button:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
 
 
 
@@ -241,6 +281,14 @@ form {
     .modal-content button:hover {
         background-color: #bebebe;
         cursor: pointer;
+    }
+}
+@media (max-width: 620px) {
+    .modal-content h1 {
+      width: 100%; /* Занимает всю доступную ширину */
+      font-size: 4vw;
+      text-align: center; /* Выравнивание по центру */
+      margin: 0; /* Убираем отступы */
     }
 }
 
