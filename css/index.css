@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Floripa';
+    src: url('Floripa.eot');
+    src: local('Floripa'),
+        url('../fonts/Floripa.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Floripa.woff2') format('woff2'),
+        url('../fonts/Floripa.woff') format('woff'),
+        url('../fonts/Floripa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* -------------------------------- */
+
+body {
+    font-size: 16px;
+    margin: 0;
+    height: 200vh;
+}
+
+/* первый блок */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    flex-direction: column;
+}
+
+.main img {
+    min-height: 30px;
+    height: 5%;
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+}
+
+.dj h1 {
+    font-family: Floripa, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw;
+    letter-spacing: 0.5em;
+    color: #111111;
+}
+
+.dj span {
+    letter-spacing: 0;
+}
+
+.desc p {
+    font-family: "Prosto One";
+    font-size: 2vh;
+    margin: 0;
+    letter-spacing: 0.5em;
+    font-weight: 900;
+    color: #111111;
+}
+
+/* второй блок */
+
+.content {
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+
+.text {
+    color: white;
+    width: 72.36vw;
+    font-family: "Prosto One";
+    font-size: 2vh;
+    margin: 0;
+    letter-spacing: 0.2em;
+    font-weight: 900;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.try {
+    margin-top: 60vh; 
+    background-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 10%;
+    width: 20vh;
+}
+
+.try p {
+    font-family: "Prosto One";
+    font-size: 2vh;
+    color: black;
+}
+
+.try:active {
+    background-color: #bebebe;
+}
+
+/* media */
+
+@media(hover: hover) and (pointer: fine) {
+    .try:hover {
+        background: #bebebe;
+        transition: background 0.2s linear;
+    }
+}
+
+@media (max-width: 520px) {
+    .dj h1 {
+        font-size: 27vw;
+        text-align: left;
+    }
+    .comma {
+        display: none;
+    }
+}
