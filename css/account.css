@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Floripa';
+    src: url('Floripa.eot');
+    src: local('Floripa'),
+        url('../fonts/Floripa.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Floripa.woff2') format('woff2'),
+        url('../fonts/Floripa.woff') format('woff'),
+        url('../fonts/Floripa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prosto One';
+    src: local('Prosto One'),
+        url('../fonts/ProstoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* -------------------------------- */
+
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Floripa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5em;
+}
+
+p {
+    font-family: "Prosto One";
+}
+
+/* ------------------------------------ */
