@@ -12,6 +12,7 @@ btn2.onclick = function() {
 reg.onclick = function() {
     modal.style.display = "none";
     modal1.style.display = "block";
+    
     document.body.style.overflow = "hidden"; // Запрещаем прокрутку фона
 }
 

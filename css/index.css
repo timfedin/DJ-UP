@@ -220,14 +220,14 @@ form {
 
 /* CSS */
 .modal-content button{
-  background-color: #FFFFFF;
-  border: 1px solid #222222;
+  background-color: #f4f4f4;
+  border: 1px solid #111111;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #222222;
+  color: #111111;
   cursor: pointer;
   display: inline-block;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-family: 'Prosto One',-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
@@ -246,7 +246,7 @@ form {
 }
 
 .modal-content button:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  box-shadow: #111111 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
   transition: box-shadow .2s;
 }
 
