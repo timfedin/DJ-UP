@@ -1,6 +1,6 @@
 let user = document.getElementsByClassName('sign')[0];
 let userTable = document.getElementsByClassName('userTable')[0];
-let tel = "+79257772244";
+let tel = "+7 925 777 22-44";
 
 user.onclick = function(event) {
     event.stopPropagation(); // Предотвращаем всплытие события клика
