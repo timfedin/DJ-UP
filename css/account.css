@@ -23,6 +23,7 @@
 /* -------------------------------- */
 * {
     margin: 0;
+    color: white;
 }
 
 button {
@@ -70,7 +71,7 @@ p {
 
 .userTable {
     width: 180px;
-    padding: 10px;
+    padding: 5px;
     background-color: #343434;
     border: 2px solid rgb(98, 98, 98);
     border-radius: 8px;
@@ -85,7 +86,7 @@ p {
 }
 .tel {
     color: white;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-bottom: 5%;
 }
 .exit {
@@ -100,8 +101,7 @@ p {
     font-size: 1em;
     font-weight: 300;
     margin: 0;
-    margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     outline: none;
     padding: 4px 14px;
     position: relative;
@@ -133,6 +133,8 @@ p {
 
 .setting {
     width: 100%;
-    height: 6000vh;
-    background-color: red;
+    height: 100vh;
 }
+
+
+
