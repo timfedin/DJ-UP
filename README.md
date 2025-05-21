@@ -47,3 +47,4 @@
 *(Сейчас это репозиторий с одной HTML-страницей, но когда-нибудь здесь будет полноценный сервис!)*  
 
 #StartupDream #WorkInProgress #FutureProject
+![screencapture-file-C-Users-timo-Downloads-DJ-UP-main-DJ-UP-main-index-html-2025-05-21-22_03_00](https://github.com/user-attachments/assets/7e0c1fd5-4443-41f6-aca3-20beac9227bb)
